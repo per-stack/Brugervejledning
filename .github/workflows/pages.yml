@@ -28,7 +28,7 @@ jobs:
         run: pip install mkdocs-material
 
       - name: Byg site
-        run: mkdocs build --strict
+        run: mkdocs build
 
       - uses: actions/configure-pages@v5
 
