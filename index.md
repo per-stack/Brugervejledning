@@ -12,8 +12,8 @@ Velkommen til brugervejledningerne til FejerPro. Vælg din rolle herunder eller 
 
 ## Hvordan gør jeg…
 
-- [Aktiver Outlook](Hvordan gør jeg/Aktiver outlook/README.md)
-- [Statistik](Hvordan gør jeg/Statistik/README.md)
+- [Aktiver Outlook](Hvordan gør jeg/Aktiver outlook/Aktiver_smtp_outlook.md)
+- [Statistik](Hvordan gør jeg/Statistik/Statistik for vare.md)
 
 ## Gennerelt
 
