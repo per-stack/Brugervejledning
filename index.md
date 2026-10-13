@@ -12,9 +12,9 @@ Velkommen til brugervejledningerne til FejerPro. Vælg din rolle herunder eller 
 
 ## Hvordan gør jeg…
 
-- [Aktiver Outlook](Hvordan gør jeg/Aktiver outlook/Aktiver_smtp_outlook.md)
 - [Statistik](Hvordan gør jeg/Statistik/Statistik for vare.md)
+- [AppAdgangskode for SMTP](<Hvordan gør jeg/appadgangskode_smtp>)
 
-## Gennerelt
+## Generelt
 
 - Genveje i FejerPro
