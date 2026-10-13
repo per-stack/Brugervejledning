@@ -1,6 +1,6 @@
 site_name: FejerPro Brugervejledning
 site_description: Brugervejledninger til FejerPro
-docs_dir: .
+docs_dir: site-src
 site_dir: site
 
 extra_css:
