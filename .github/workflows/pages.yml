@@ -27,6 +27,12 @@ jobs:
       - name: Installer MkDocs Material
         run: pip install mkdocs-material
 
+      - name: Forbered indhold
+        run: |
+          mkdir site-src
+          cp -r ./* site-src/ 2>/dev/null || true
+          rm -rf site-src/.git site-src/.github site-src/mkdocs.yml site-src/README.md site-src/site
+
       - name: Byg site
         run: mkdocs build
 
