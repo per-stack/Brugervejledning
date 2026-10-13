@@ -1,8 +1,13 @@
 site_name: FejerPro Brugervejledning
 site_description: Brugervejledninger til FejerPro
-docs_dir: site-src
+docs_dir: .
 site_dir: site
 
+exclude_docs:
+  - .github/
+  - README.md
+  - mkdocs.yml
+  
 extra_css:
   - extra.css
 
