@@ -1,4 +1,5 @@
-# Liste over besøg med rest
+# Liste over besøg med rest Slettes
+
 
 ![Fejningshistorik](<../../../../images/Fejningshistorik - Skærmbillede.png>)
 
@@ -14,13 +15,12 @@ De linier der er grået ud, er ejendomme der inaktive
 - År - Dropdown valgfelter
   - Vis alle
   - <Årstal>
-- BBR - Tekst indtastningsfelt - Mulighed for indtastning af BBR-nr ( BBR er ved at blive erstattet af BFE)	
+- BBR - Tekst indtastningsfelt - Mulighed for indtastning af BBR-nr ( BBR er ved at blive erstattet af BFE)
 - BFE - Tekst indtastningsfelt - Mulighed for indtastning af BFE-nr ( Offentlige ejendomsnumre)
-- Adresse - Tekst indtastningsfelt 	
+- Adresse - Tekst indtastningsfelt
 - Postnr.  - Tekst indtastningsfelt
 
-Knap 	
+Knap
 
 
 ## Listens koloner
-
