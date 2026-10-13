@@ -33,6 +33,32 @@ jobs:
           cp -r ./* site-src/ 2>/dev/null || true
           rm -rf site-src/.git site-src/.github site-src/mkdocs.yml site-src/README.md site-src/site
 
+      - name: Generér manglende indekssider
+        run: |
+          python3 - <<'EOF'
+          import os, glob
+          root = "site-src"
+          for dirpath, dirnames, filenames in os.walk(root):
+              if "index.md" in [f.lower() for f in filenames]:
+                  continue
+              mds = sorted(glob.glob(os.path.join(dirpath, "*.md")))
+              subs = sorted(
+                  d for d in dirnames
+                  if glob.glob(os.path.join(dirpath, d, "*.md"))
+              )
+              if not mds and not subs:
+                  continue
+              title = os.path.basename(dirpath) or "Indhold"
+              lines = [f"# {title}", "", "Vælg en side herunder:", ""]
+              for m in mds:
+                  name = os.path.splitext(os.path.basename(m))[0]
+                  lines.append(f"- {name}")
+              for s in subs:
+                  lines.append(f"- [{s}]({s}/)")
+              with open(os.path.join(dirpath, "index.md"), "w", encoding="utf-8") as f:
+                  f.write("\n".join(lines) + "\n")
+          EOF
+
       - name: Byg site
         run: mkdocs build
 
