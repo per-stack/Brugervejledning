@@ -3,6 +3,9 @@ site_description: Brugervejledninger til FejerPro
 docs_dir: site-src
 site_dir: site
 
+extra_css:
+  - extra.css
+
 theme:
   name: material
   language: da
